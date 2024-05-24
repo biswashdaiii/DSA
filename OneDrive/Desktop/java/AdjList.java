@@ -37,5 +37,24 @@ public class AdjList {
 
     }
     return List;
+
+    void BFS (int source){
+        Queues q= new Queues(v);
+        boolean[] visited=new boolean[v];
+        visited[source]=true;
+        q.enqueue(source);
+        while(!q.isEmpty()){
+
+            int U=q.dequeue();
+            System.out.println(u);
+            for(int j =0; j<v;j++);
+            if(matrix[u][j]==1){
+                if(!visited[j]){
+                    q.enqueue(j);
+                    visited[j]=true
+                }
+            }
+        }
+    }
 }
 }

@@ -35,7 +35,14 @@ public class AdjMatrix {
                 List.add(j);
             return List;
             }
-    
+
+            void dfs(boolean[] visited,int source){
+                
+            }
+            void depthFirstSearch(int source){
+                boolean[] visited=new boolean[v];
+                dfs(visited,source);
+            }
         }
    public static void main(String[] args) {
     AdjMatrix adj = new AdjMatrix(6);
